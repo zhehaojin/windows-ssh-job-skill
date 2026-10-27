@@ -1,0 +1,4 @@
+interface:
+  display_name: "Windows SSH 作业流程"
+  short_description: "远程连接 Windows、提交后台作业、查询进度并通过 Git 回传结果"
+  default_prompt: "使用 $windows-ssh-jobs 连接已配置的 Windows 服务器，提交任务并回传结果。"

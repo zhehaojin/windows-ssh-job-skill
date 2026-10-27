@@ -1,0 +1,6 @@
+{
+  "host": "windows-host.example",
+  "user": "remote-user",
+  "repo": "D:\\work\\project",
+  "credential_file": "C:\\private\\ssh-password.txt"
+}
