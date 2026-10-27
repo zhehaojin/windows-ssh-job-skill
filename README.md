@@ -43,7 +43,7 @@ $python = 'D:\work\project\.venv\Scripts\python.exe'
 .\scripts\remote.ps1 -Action Info -RemotePython $python
 ```
 
-省略解释器时，项目 `.deployment/environment.json` 须包含 `python`、`lock_sha256`，且与该项目的 `requirements-windows.lock.txt` 一致。
+省略解释器时，项目 `.deployment/environment.json` 须包含 `python`、`lock_sha256`，且与该项目的 `requirements-windows.lock.txt` 一致。只要该记录存在，Launch 就会校验它；显式传入 `-RemotePython` 也须匹配记录，不能绕过已有环境锁。
 
 准备 Python 参数数组；其中的脚本须已位于远程项目中：
 

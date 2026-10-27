@@ -11,7 +11,7 @@ description: 通过已配置的 SSH 连接 Windows 服务器，提交 Python 后
 
 读取已有配置；若缺失，让用户一次性指定服务器、账户、项目目录和本地密码文件位置。只问路径，不在聊天中索取密码。用 `scripts/configure.ps1` 保存路径，`scripts/setup.ps1` 编译 askpass。已有有效配置直接复用。密码由子进程读取，不进入 skill、命令行或日志。
 
-在首次人工 SSH 连接中核实主机指纹；脚本保持严格主机校验。远程默认解释器来自项目 `.deployment/environment.json`，其他环境通过 `-RemotePython` 指定实际 Python。
+在首次人工 SSH 连接中核实主机指纹；脚本保持严格主机校验。远程默认解释器来自项目 `.deployment/environment.json`，其他环境通过 `-RemotePython` 指定实际 Python。已有部署记录时，Launch 仍要求解释器和依赖锁与记录匹配。
 
 ## 执行
 
